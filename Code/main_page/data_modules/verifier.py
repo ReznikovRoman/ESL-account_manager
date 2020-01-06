@@ -34,5 +34,3 @@ class Verifier:
                     continue
             return True
 
-
-# print(Verifier('2332').check_password())
