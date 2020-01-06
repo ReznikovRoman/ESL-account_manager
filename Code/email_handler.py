@@ -7,10 +7,6 @@ from email.mime.text import MIMEText
 from email.message import EmailMessage
 
 
-# Google API
-# 913171329991-oqae5f99m07lo4g5ksni60b1qcs4ms6q.apps.googleusercontent.com
-# XZybigE9ix_4VMu2_9fyZLwL
-
 EMAIL_ADDRESS = 'esl.manager.mail@gmail.com'
 EMAIL_PASSWORD = 'eslaccountmanagerdevop'
 
@@ -127,42 +123,6 @@ def get_file_info():
     except FileNotFoundError:
         return ["User email: ", "User nickname: ", "User password : ", "Send email state: ", "Is registered: ", "'Remember me' status: ", 'Error: 1']
 
-
-# text_msg = 'Test message - 1\nTest message new row\nTest message url: https://google.com'
-# EmailHandler(get_file_info()).send_email(text_msg)
-# if EmailHandler(get_file_info()).send_email(text_msg) == 'Email not found!':
-#     print('Alarm!!!')
-
-# print(get_file_info())
-
-
-'''
-import smtplib                                      # Импортируем библиотеку по работе с SMTP
-
-# Добавляем необходимые подклассы - MIME-типы
-from email.mime.multipart import MIMEMultipart      # Многокомпонентный объект
-from email.mime.text import MIMEText                # Текст/HTML
-from email.mime.image import MIMEImage              # Изображения
-
-addr_from = "from_address@mail.com"                 # Адресат
-addr_to   = "to_address@mail.com"                   # Получатель
-password  = "pass"                                  # Пароль
-
-msg = MIMEMultipart()                               # Создаем сообщение
-msg['From']    = addr_from                          # Адресат
-msg['To']      = addr_to                            # Получатель
-msg['Subject'] = 'Тема сообщения'                   # Тема сообщения
-
-body = "Текст сообщения"
-msg.attach(MIMEText(body, 'plain'))                 # Добавляем в сообщение текст
-
-server = smtplib.SMTP('smtp-server', 587)           # Создаем объект SMTP
-server.set_debuglevel(True)                         # Включаем режим отладки - если отчет не нужен, строку можно закомментировать
-server.starttls()                                   # Начинаем шифрованный обмен по TLS
-server.login(addr_from, password)                   # Получаем доступ
-server.send_message(msg)                            # Отправляем сообщение
-server.quit()                                       # Выходим
-'''
 
 
 
