@@ -4,15 +4,6 @@ import app_account_manager.email_handler
 import app_account_manager.registration_page.signup_page
 
 
-# TODO: Add button in Settings: "Signal's volume --> 100%, 75%, 50%, 25%, 0%"
-# TODO: Send email ONLY if there are some opened protests (atm it sends email every <refresh_time> minutes)
-# TODO: Create button in Login: "Forgot password" --> Open new menu -> Enter new/previous email -> Enter new password
-
-# TODO: Learn about Machine learning and AI in Python
-# TODO: Create AI, which will recognize protests topics and main problems there (e.g. - "Opponents don't join us" -->
-#                                                                                        --> "Wait for 10 minutes...")
-
-
 def setup_info():
     file_info = app_account_manager.email_handler.get_file_info()
     a_email_handler = app_account_manager.email_handler.EmailHandler(file_info)
