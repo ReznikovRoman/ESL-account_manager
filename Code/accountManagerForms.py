@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'testing_2.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.0
-#
-# WARNING! All changes made in this file will be lost!
 
 
 import requests
@@ -20,14 +13,6 @@ from PyQt5.QtGui import QDesktopServices
 from PyQt5.QtCore import QUrl
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
-
-
-'''
-3) Learn how to use multiple pages in a desktop app
-4) Start working on a login system (with a database or simply with creating  a '.txt' file)
-5) Send e-mail, when a new protest opens
-6) 
-'''
 
 
 class Verifier:
@@ -589,68 +574,6 @@ class BackendQThread(QThread):
         self.terminate()
 
 
-  # AutoAdminThread
-'''
-class AutoAdminThread(QThread):
-    def __init__(self, mainwindow, refresh_time, league_id, parent = None):
-        super().__init__()
-        self.mainwindow = mainwindow
-        self.refresh_time = refresh_time
-        self.league_id = league_id
-        self.runs = True
-
-    def auto_admin(self):
-        text = ""
-        text += "\n"
-        is_similar_protest = False
-        my_file = open("matches_ids.txt", "w")
-        my_file.write("")
-        my_file.close()
-        while True:
-            test_league = League(self.league_id)
-            protests = test_league.check_tickets()[0]
-            total_protests_amount = test_league.check_tickets()[1]
-            total_protests_amount_string = 'Total amount of opened tickets'
-            self.mainwindow.output_info.append('<span>{0}: {1}<span>'.format(total_protests_amount_string, total_protests_amount))
-            for protest in protests:
-                for key, value in protest.items():
-                    self.mainwindow.output_info.append('<span>{0}: {1}<span>'.format(key, value))
-                self.mainwindow.output_info.append("")
-
-            if text == "Total amount of opened tickets: {0}".format(total_protests_amount) + "\n":
-                time.sleep(self.refresh_time)
-                continue
-            else:
-                values_from_file = []
-                matches_id = test_league.check_tickets()[2]
-                same_matches_id = []
-                with open('matches_ids.txt', 'r') as f:
-                    values_from_file = f.read().splitlines()
-                values_from_file = [int(item) for item in values_from_file]
-                same_matches_id = list(set(values_from_file) & set(matches_id))
-                sounds_amount = len(matches_id) - len(same_matches_id)
-                if sounds_amount > 0:
-                    for i in range(sounds_amount):
-                        beep()
-                my_file = open("matches_ids.txt", "a")
-                for id in matches_id:
-                    if id not in values_from_file:
-                        my_file.write("{0}\n".format(id))
-                my_file.close()
-                time.sleep(self.refresh_time)
-
-    def stop_thread(self):  # takes a long time (obviously "refresh time")
-        self.runs = False
-        self.wait()
-
-    def terminate_thread(self):  # immediately kills a thread
-        self.terminate()
-
-    def run(self):
-        self.auto_admin()
-        #   self.test_function()
-'''
-
 class League:
     def __init__(self, league_id):
         self.base_url = 'http://api.eslgaming.com/play/v1/leagues/'
@@ -697,7 +620,6 @@ class League:
         response = json.loads(r.text)
         return response
 
-    # have to think about optimisation
     def get_league_members_info(self):
         r = requests.get(self.base_url + self.league_id + "/contestants")
         response = json.loads(r.text)
@@ -1474,8 +1396,6 @@ class Ui_MainWindow(object):
         self.output_info.setFont(new_font)
         self.output_info.setOpenExternalLinks(True)
         self.output_info.setAcceptRichText(True)
-        #self.output_info.setOpenLinks(True)
-        #self.output_info.setReadOnly(False)
 
         self.input_player_id = QtWidgets.QLineEdit(self.centralwidget)
         self.input_player_id.setGeometry(QtCore.QRect(10, 390, 113, 20))
@@ -1635,15 +1555,6 @@ class Ui_MainWindow(object):
         self.threads.append(backend_thread)
 
         self.output_info.moveCursor(self.output_info.textCursor().Start)
-
-
-        # ---------TEAM FUNCTIONS--------
-
-        # ---------MATCH FUNCTIONS----------
-
-        # --------LEAGUE FUNCTIONS--------
-
-
 
 
 
