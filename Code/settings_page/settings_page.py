@@ -208,12 +208,6 @@ class Ui_settings_window(object):
             file.write(data.replace(data, new_data))
             file.close()
 
-            # TEST - new data in file
-            # file = open('setup_info.txt', 'r')
-            # print(file.read())
-            # print()
-            # file.close()
-
             # main_page_ui.label_greeting.setText(("Welcome back, %s !" % new_nickname))
 
             settings_page.hide()
