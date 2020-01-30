@@ -1,0 +1,6 @@
+User email: test@email.com
+User nickname: None
+User password: 2121
+Send email state: 2
+Is registered: 1
+'Remember me' status: 2
