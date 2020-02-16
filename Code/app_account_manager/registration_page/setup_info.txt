@@ -1,6 +1,0 @@
-User email: roman@email.com
-User nickname: sfsa
-Send email state: 2
-Is registered: 1
-'Remember me' status: 0
-Notifications state: 2

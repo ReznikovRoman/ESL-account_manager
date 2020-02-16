@@ -1,6 +1,0 @@
-User email: salute.-@staff.eslgaming.com
-User nickname: test
-User password: 123
-Send email state: 2
-Is registered: 1
-'Remember me' status: 0

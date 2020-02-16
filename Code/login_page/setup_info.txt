@@ -1,5 +1,0 @@
-User email: fmsfs@email.com
-User password: 123
-Send email state: 0
-Is registered: 1
-'Remember me' status: 0
