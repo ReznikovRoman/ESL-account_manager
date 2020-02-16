@@ -1,6 +1,0 @@
-User email: test3@email.com
-User nickname: rere
-Send email state: 2
-Is registered: 1
-'Remember me' status: 0
-Notifications state: 2

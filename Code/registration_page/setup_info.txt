@@ -1,4 +1,0 @@
-User email: test@a.c
-User nickname: adad
-User password: 13
-Send email state: 2
