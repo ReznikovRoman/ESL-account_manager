@@ -1,0 +1,2 @@
+User email: final@mail.com
+'Remember me' status: 0

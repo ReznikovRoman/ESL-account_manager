@@ -1,0 +1,5 @@
+User email: test200@email.com
+User nickname: dad12
+Send email state: 2
+'Remember me' status: 0
+Notifications state: 2
