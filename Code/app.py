@@ -38,6 +38,7 @@ if __name__ == "__main__":
     else:
         if __name__ == '__main__':
             login_page.loginPage.main()
-            #registration_page.signup_page.main()
+            # registration_page.signup_page.main()
+            # new
             settings_ui = settings_page.settings_page.ui
             settings_ui.settings_email_input.setText(email)
