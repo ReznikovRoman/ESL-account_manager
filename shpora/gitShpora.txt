@@ -1,0 +1,59 @@
+===BASH
+
+clear :очистка консоли
+pwd :где я ?
+ls :что лежит в текущей папке?
+ls -la :подобный вариант
+cd :change directory
+cd ~ :домашняя директория
+cd / :корневая директория
+cd /D :зайти в корень какого-то из дисков
+cd - :вернутья в предыд папку
+mkdir "название папки" :создать папку
+rm "имя файла" : remove файл
+rm "имя папки" -r :удаление папки
+cp "файл_старый" "файл новый" :копирование
+mv "старое имя" "новое имя" :переименование
+mv "старое имя" "новое имя"
+
+==РАЗНОЕ
+https://ru.wikipedia.org/wiki/Chmod :Права доступа к файлам
+
+==GIT
+git clone fsdfsdfsdf@thzphotonics.org:git/kokoko.git :присоединяешься к проекту
+git init :создал папку и создал локальный репозиторий 
+
+git branch :список веток
+git branch "имя новой ветки" :создание новой ветки
+git checkout "ветка" : переключение на ветку "ветка"
+git checkout - :предыдущая ветка
+git checkout -b "имя ветки" :создание новой ветки и переключение на неё
+git branch -D "имя ветки" :удаление ветки
+
+git status
+git add "имя файла" :добавить файл
+git add "имя файла1" "имя файла2" :добавить 2 файла
+git add . :добавить всё, что лежит в текущей папке
+
+git diff :посмотреть различия между committed/added(=staged) и чем-то новым
+git diff "имя файла" :то же самое, но для конкретного файла
+git diff --staged : то же, но для added (=staged)
+
+git commit :создать коммит
+git commit -m "имя коммита" :комментарий без редактора
+git commit -am "имя коммита"
+git commit --amend
+git stash
+
+
+git reset --soft HEAD^
+git reset --hard HEAD^
+
+git pull
+git push
+git merge
+
+
+
+git show
+
