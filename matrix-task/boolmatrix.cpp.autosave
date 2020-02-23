@@ -1,0 +1,6 @@
+#include "BoolMatrix.h"
+
+BoolMatrix::BoolMatrix()
+{
+
+}
