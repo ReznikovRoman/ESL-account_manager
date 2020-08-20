@@ -8,7 +8,7 @@ from email.message import EmailMessage
 
 
 EMAIL_ADDRESS = 'esl.manager.mail@gmail.com'
-EMAIL_PASSWORD = 'eslaccountmanagerdevop'
+EMAIL_PASSWORD = ''
 
 
 class EmailHandler:
