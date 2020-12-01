@@ -11,11 +11,7 @@ import settings_page.settings_page
 # TODO: 2. - Use MySQL db to store users' passwords and emails
 
 # TODO: 3. - Add button/slider in Settings: "Signal's volume --> "100%, 75%, 50%, 25%, 0%"
-
-
-# TODO: (Optional) - Learn about Machine learning and AI in Python
-# TODO: Create AI, which will recognize protests topics and main problems there (e.g. - "Opponents don't join us" -->
-#                                                                                        --> "Wait for 10 minutes...")
+                                                                                  --> "Wait for 10 minutes...")
 
 
 def setup_info():
